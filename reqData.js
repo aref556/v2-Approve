@@ -49,40 +49,40 @@ request(options, (error, response) => {
         // rsakey
         // flagserver
 
-        const data_write = username + "\n" ;
+        const data_username = username + "\n" ;
         f.open("username.txt", 'w', (err, fd) => {
             if (err) throw err;
-            f.appendFile(fd, data_write, 'utf8', (err) => {
+            f.appendFile(fd, data_username, 'utf8', (err) => {
                 if (err) throw new err;
                 f.close(fd, (err) => {
                     if (err) throw new err;
                 });
             });
         });
-        const data_write = account + "\n";
+        const data_account = account + "\n";
         f.open("account.txt", 'w', (err, fd) => {
             if (err) throw err;
-            f.appendFile(fd, data_write, 'utf8', (err) => {
+            f.appendFile(fd, data_account, 'utf8', (err) => {
                 if (err) throw new err;
                 f.close(fd, (err) => {
                     if (err) throw new err;
                 });
             });
         });
-        const data_write = data["rsakey"] + "\n";
+        const data_rsakey = data["rsakey"] + "\n";
         f.open("rsakey.txt", 'w', (err, fd) => {
             if (err) throw err;
-            f.appendFile(fd, data_write, 'utf8', (err) => {
+            f.appendFile(fd, data_rsakey, 'utf8', (err) => {
                 if (err) throw new err;
                 f.close(fd, (err) => {
                     if (err) throw new err;
                 });
             });
         });
-        const data_write = data["flagserver"] + "\n";
+        const data_flagserver = data["flagserver"] + "\n";
         f.open("flagserver.txt", 'w', (err, fd) => {
             if (err) throw err;
-            f.appendFile(fd, data_write, 'utf8', (err) => {
+            f.appendFile(fd, data_flagserver, 'utf8', (err) => {
                 if (err) throw new err;
                 f.close(fd, (err) => {
                     if (err) throw new err;
