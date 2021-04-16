@@ -44,6 +44,7 @@ request(options, (error, response) => {
         console.log(account);
 
         // โครงสร้าง ไฟล์ที่เขียน ชื่อไฟล์เป็น username.txt
+        // username
         // ชื่อ axxx
         // rsakey
         // flagserver
