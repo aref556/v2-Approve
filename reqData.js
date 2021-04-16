@@ -50,7 +50,7 @@ request(options, (error, response) => {
         // flagserver
 
         const data_write = username + "\n" ;
-        f.open("username.txt", 'a', (err, fd) => {
+        f.open("username.txt", 'w', (err, fd) => {
             if (err) throw err;
             f.appendFile(fd, data_write, 'utf8', (err) => {
                 if (err) throw new err;
@@ -60,7 +60,7 @@ request(options, (error, response) => {
             });
         });
         const data_write = account + "\n";
-        f.open("account.txt", 'a', (err, fd) => {
+        f.open("account.txt", 'w', (err, fd) => {
             if (err) throw err;
             f.appendFile(fd, data_write, 'utf8', (err) => {
                 if (err) throw new err;
@@ -70,7 +70,7 @@ request(options, (error, response) => {
             });
         });
         const data_write = data["rsakey"] + "\n";
-        f.open("rsakey.txt", 'a', (err, fd) => {
+        f.open("rsakey.txt", 'w', (err, fd) => {
             if (err) throw err;
             f.appendFile(fd, data_write, 'utf8', (err) => {
                 if (err) throw new err;
@@ -80,7 +80,7 @@ request(options, (error, response) => {
             });
         });
         const data_write = data["flagserver"] + "\n";
-        f.open("flagserver.txt", 'a', (err, fd) => {
+        f.open("flagserver.txt", 'w', (err, fd) => {
             if (err) throw err;
             f.appendFile(fd, data_write, 'utf8', (err) => {
                 if (err) throw new err;
