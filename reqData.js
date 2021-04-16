@@ -34,14 +34,14 @@ request(options, (error, response) => {
         }
 
         // ดูผลลัพธ์
-        console.log(data);
-        console.log(data["username"]);
-        console.log(name_num_obj);
-        console.log(name_num);
-        console.log(count_name);
-        console.log(count);
-        console.log(username);
-        console.log(account);
+        // console.log(data);
+        // console.log(data["username"]);
+        // console.log(name_num_obj);
+        // console.log(name_num);
+        // console.log(count_name);
+        // console.log(count);
+        // console.log(username);
+        // console.log(account);
 
         // โครงสร้าง ไฟล์ที่เขียน ชื่อไฟล์เป็น username.txt
         // username

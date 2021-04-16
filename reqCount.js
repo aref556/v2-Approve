@@ -10,7 +10,7 @@ var options = {
 
 request(options, function (error, response) {
     if (error) throw new Error(error);
-    // console.log(response.body);
+    console.log(response.body);
     const data = `${response.body} \n`;
     f.open('count.txt', 'w', (err, fd) => {
         f.writeFile(fd, data, `utf8`, (err) => {
