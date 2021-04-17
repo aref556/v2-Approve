@@ -10,7 +10,7 @@ request(options, (error, response) => {
     if (error) throw error;
     var data = JSON.parse(response.body);
     if (data["statusCode"] == 400) {
-        console.log(data);
+        // console.log(data);
     }
     else {
         //   const username = data["username"][3:5];
